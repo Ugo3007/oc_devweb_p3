@@ -8,4 +8,26 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+.back-arrow-position {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.header__logo {
+  height: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
