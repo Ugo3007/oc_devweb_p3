@@ -1,0 +1,18 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass --watch src/style/sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ugo3007/oc_devweb_p3.git"
+  },
+  "author": "Ugo GABRIEL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ugo3007/oc_devweb_p3/issues"
+  },
+  "homepage": "https://github.com/Ugo3007/oc_devweb_p3#readme"
+}
