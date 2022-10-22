@@ -4,10 +4,14 @@
 $titles_font_style : 'Shrikhand', cursive;
 $text_font_style: 'Roboto', sans-serif;
 
+.white {
+  color: white;
+}
+
 body {
   font-family: $text_font_style;
 }
 
-h1 {
+h1, h2 {
   font-family: $titles_font_style;
 }
