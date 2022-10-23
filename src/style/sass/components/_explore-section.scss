@@ -1,0 +1,23 @@
+.explore-section {
+  height: 285px;
+  background-color: $background-grey2;
+  padding-top: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin: 20px 30px 0;
+    font-weight: 300;
+    text-align: center;
+  }
+
+}
+
+.explore-section__title {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 75px;
+  font-family: $text_font_style;
+}

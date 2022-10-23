@@ -1,0 +1,13 @@
+.gradiant_button {
+  box-sizing: border-box;
+  min-height: 50px;
+  min-width: 220px;
+  margin: 30px 75px 50px;
+  padding: 0;
+  border-radius: 25px;
+  color: white;
+  background: rgb(147,86,220);
+  background: linear-gradient(351deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 79%);
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
