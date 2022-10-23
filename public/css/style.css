@@ -18,6 +18,24 @@ h1, h2 {
   left: 30px;
 }
 
+.location-section {
+  height: 50px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding-right: 16px;
+}
+.location-section p {
+  text-align: center;
+  font-size: 14px;
+  height: 15px;
+  margin: auto 0;
+}
+.location-section p i {
+  position: relative;
+  right: 20px;
+}
+
 .header {
   position: sticky;
   top: 0;

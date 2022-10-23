@@ -1,0 +1,21 @@
+.location-section {
+  height: 50px;
+  background-color: $background-grey;
+  display: flex;
+  justify-content: center;
+  padding-right: 16px;
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    height: 15px;
+    margin: auto 0;
+
+    i {
+      position: relative;
+      right: 20px;
+    }
+  }
+
+}
+
