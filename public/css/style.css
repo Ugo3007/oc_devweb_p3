@@ -73,6 +73,63 @@ h1, h2 {
   font-family: "Roboto", sans-serif;
 }
 
+.function-section {
+  box-sizing: border-box;
+  height: 440px;
+  margin: 0 15px 0 25px;
+  padding-top: 50px;
+}
+.function-section h2, .function-section h3 {
+  font-family: "Roboto", sans-serif;
+}
+.function-section h2 {
+  margin-bottom: 30px;
+}
+.function-section div {
+  height: 75px;
+  min-width: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 10px;
+}
+.function-section h3 {
+  position: relative;
+  left: 20px;
+  font-weight: 600;
+}
+.function-section .border {
+  background-color: #9356DC;
+  height: 25px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding-right: 2px;
+  position: relative;
+  right: 12px;
+}
+.function-section .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.function-section div:hover {
+  background-color: #f5edff;
+  cursor: pointer;
+}
+.function-section div:hover .icon {
+  color: #9356DC;
+}
+
 .header {
   position: sticky;
   top: 0;
