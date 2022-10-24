@@ -1,0 +1,51 @@
+.restaurant-section {
+  height: 1230px;
+  background-color: $background-grey2;
+  box-sizing: border-box;
+  padding: 55px 20px 0;
+
+  h2 {
+    margin-bottom: 25px;
+    font-family: $text_font_style;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    article {
+      background-color: #fff;
+      min-width: 335px;
+      height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+   
+
+      img {
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px 0 10px;
+
+        h3 {
+          margin: 0;
+
+        }
+
+      }
+
+      h4 {
+        margin: 0;
+        padding: 5px 20px 0 10px;
+        font-weight: 100;
+      }
+
+    }
+  }
+}

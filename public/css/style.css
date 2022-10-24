@@ -130,6 +130,47 @@ h1, h2 {
   color: #9356DC;
 }
 
+.restaurant-section {
+  height: 1230px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  padding: 55px 20px 0;
+}
+.restaurant-section h2 {
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.restaurant-section .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurant-section .cards-container article {
+  background-color: #fff;
+  min-width: 335px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.restaurant-section .cards-container article img {
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant-section .cards-container article div {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 0 10px;
+}
+.restaurant-section .cards-container article div h3 {
+  margin: 0;
+}
+.restaurant-section .cards-container article h4 {
+  margin: 0;
+  padding: 5px 20px 0 10px;
+  font-weight: 100;
+}
+
 .header {
   position: sticky;
   top: 0;
