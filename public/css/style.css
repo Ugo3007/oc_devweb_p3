@@ -233,11 +233,12 @@ h1, h2 {
   box-sizing: border-box;
   position: relative;
   z-index: 0;
-  bottom: 30px;
+  top: -30px;
   background-color: #f7f7f7;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 30px 15px 0 15px;
+  margin-bottom: -30px;
 }
 .menu header {
   display: flex;
