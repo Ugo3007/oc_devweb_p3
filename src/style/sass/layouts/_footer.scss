@@ -25,8 +25,32 @@
     width: 15px;
     height: 15px;
   }
+
   i {
     padding-right: 10px;
   }
 }
 
+@media screen and (min-width: 500px) {
+  .footer {
+    padding-left: 15%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}

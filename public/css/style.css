@@ -255,6 +255,27 @@ img + main {
   padding-right: 10px;
 }
 
+@media screen and (min-width: 500px) {
+  .footer {
+    padding-left: 15%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    padding-left: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}
 .menu__image {
   height: 270px;
   width: 100%;
@@ -329,6 +350,11 @@ img + main {
   display: flex;
   text-align: center;
   justify-content: space-between;
+}
+
+main {
+  max-width: 992px;
+  margin: 0 auto 0;
 }
 
 /*# sourceMappingURL=style.css.map */
