@@ -3,25 +3,34 @@
 <head>
     <title>À la française - Ohmyfood</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="../../public/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="../../public/css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+    <link href="../../public/css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <a href="../../index.html"><i class="fa-solid fa-arrow-left back-arrow-position"></i></a>
-    <img class="header__logo" src="../../public/assets/logo/ohmyfood.png"
-         alt="Le logo de ohmyfood, ohmyfood est écrit en noir sur fond blanc avec la police Shrikhand">
+    <img alt="Le logo de ohmyfood, ohmyfood est écrit en noir sur fond blanc avec la police Shrikhand"
+         class="header__logo"
+         src="../../public/assets/logo/ohmyfood.png">
 </header>
 
-
-<img class="menu__image" src="../../public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-     alt="Photo en gros plan d'une assiette sur une table d'un restaurant avec du pain de la salade et des oeufs pochés">
+<img alt="Photo en gros plan d'une assiette sur une table d'un restaurant avec du pain de la salade et des oeufs pochés"
+     class="menu__image"
+     src="../../public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
 <main class="menu">
     <header>
         <h2>À la française</h2>
-        <i class="fa-regular fa-heart"></i>
+        <i class="heart">
+            <svg viewBox="0 0 24 24">
+                <linearGradient id="hearLinearGradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(147, 86, 220, 1)"/>
+                    <stop offset="79%" stop-color="rgba(255, 121, 218, 1)"/>
+                </linearGradient>
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+            </svg>
+        </i>
     </header>
 
     <section class="menu__section">
@@ -115,10 +124,10 @@
 <footer class="footer white">
     <h2>ohmyfood</h2>
     <ul>
-        <li><a href="#" class="white"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-        <li><a href="#" class="white"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
-        <li><a href="#" class="white">Mentions légales</a></li>
-        <li><a href="mailto:hello@ohmyfood.com" class="white">Contact</a></li>
+        <li><a class="white" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+        <li><a class="white" href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
+        <li><a class="white" href="#">Mentions légales</a></li>
+        <li><a class="white" href="mailto:hello@ohmyfood.com">Contact</a></li>
     </ul>
 </footer>
 </body>

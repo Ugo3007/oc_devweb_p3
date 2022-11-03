@@ -2,16 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="public/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link href="public/css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+    <link href="public/css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <img class="header__logo" src="public/assets/logo/ohmyfood.png"
-         alt="Le logo de ohmyfood, ohmyfood est écrit en noir sur fond blanc avec la police Shrikhand">
+    <img alt="Le logo de ohmyfood, ohmyfood est écrit en noir sur fond blanc avec la police Shrikhand"
+         class="header__logo"
+         src="public/assets/logo/ohmyfood.png">
 </header>
 
 <main>
@@ -43,36 +44,76 @@
         <div class="cards-container">
             <a href="src/menu/la_palette_du_gout.html">
                 <article>
-                    <img src="public/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                         alt="Photo d'une assiette remplie sur une table de restaurant avec des verres et des corbeilles de pain">
-                    <div><h3>La Palette du goût</h3> <i class="fa-regular fa-heart"></i></div>
+                    <img alt="Photo d'une assiette remplie sur une table de restaurant avec des verres et des corbeilles de pain"
+                         src="public/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <div><h3>La Palette du goût</h3>
+                        <i class="heart">
+                            <svg viewBox="0 0 24 24">
+                                <linearGradient id="hearLinearGradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(147, 86, 220, 1)"/>
+                                    <stop offset="79%" stop-color="rgba(255, 121, 218, 1)"/>
+                                </linearGradient>
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                            </svg>
+                        </i>
+                    </div>
                     <h4>Ménilmontant</h4>
                 </article>
             </a>
 
             <a href="src/menu/la_note_enchantee.html">
                 <article>
-                    <img src="public/assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                         alt="Photo d'une table de restaurant vue du dessus, avec une corbeille de pain des verres, plusieurs assiettes avec des tomates et un repas et un aperol spritz">
-                    <div><h3>La note enchantée</h3> <i class="fa-regular fa-heart"></i></div>
+                    <img alt="Photo d'une table de restaurant vue du dessus, avec une corbeille de pain des verres, plusieurs assiettes avec des tomates et un repas et un aperol spritz"
+                         src="public/assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                    <div><h3>La note enchantée</h3>
+                        <i class="heart">
+                            <svg viewBox="0 0 24 24">
+                                <linearGradient id="hearLinearGradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(147, 86, 220, 1)"/>
+                                    <stop offset="79%" stop-color="rgba(255, 121, 218, 1)"/>
+                                </linearGradient>
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                            </svg>
+                        </i>
+                    </div>
                     <h4>Charonne</h4>
                 </article>
             </a>
 
             <a href="src/menu/a_la_francaise.html">
                 <article>
-                    <img src="public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                         alt="Photo en gros plan d'une assiette sur une table d'un restaurant avec du pain de la salade et des oeufs pochés">
-                    <div><h3>À la française</h3> <i class="fa-regular fa-heart"></i></div>
+                    <img alt="Photo en gros plan d'une assiette sur une table d'un restaurant avec du pain de la salade et des oeufs pochés"
+                         src="public/assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                    <div><h3>À la française</h3>
+                        <i class="heart">
+                            <svg viewBox="0 0 24 24">
+                                <linearGradient id="hearLinearGradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(147, 86, 220, 1)"/>
+                                    <stop offset="79%" stop-color="rgba(255, 121, 218, 1)"/>
+                                </linearGradient>
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                            </svg>
+                        </i>
+                    </div>
                     <h4>Cité Rouge</h4>
                 </article>
             </a>
 
             <a href="src/menu/le_delice_des_sens.html">
                 <article>
-                    <img src="public/assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                         alt="Photo d'une assiette rectangulaire allongée avec du poisson sur un lit de légumes">
-                    <div><h3>Le délice des sens</h3> <i class="fa-regular fa-heart"></i></div>
+                    <img alt="Photo d'une assiette rectangulaire allongée avec du poisson sur un lit de légumes"
+                         src="public/assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                    <div><h3>Le délice des sens</h3>
+                        <i class="heart">
+                            <svg viewBox="0 0 24 24">
+                                <linearGradient id="hearLinearGradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(147, 86, 220, 1)"/>
+                                    <stop offset="79%" stop-color="rgba(255, 121, 218, 1)"/>
+                                </linearGradient>
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                            </svg>
+                        </i>
+                    </div>
                     <h4>Folie-Méricourt</h4>
                 </article>
             </a>
@@ -84,10 +125,10 @@
 <footer class="footer white">
     <h2>ohmyfood</h2>
     <ul>
-        <li><a href="#" class="white"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-        <li><a href="#" class="white"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
-        <li><a href="#" class="white">Mentions légales</a></li>
-        <li><a href="mailto:hello@ohmyfood.com" class="white">Contact</a></li>
+        <li><a class="white" href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+        <li><a class="white" href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
+        <li><a class="white" href="#">Mentions légales</a></li>
+        <li><a class="white" href="mailto:hello@ohmyfood.com">Contact</a></li>
     </ul>
 </footer>
 </body>

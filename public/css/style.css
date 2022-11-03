@@ -22,8 +22,8 @@ h1, h2 {
 .gradiant_button {
   box-sizing: border-box;
   min-height: 50px;
-  min-width: 220px;
-  margin: 30px 75px 50px;
+  width: 220px;
+  margin: 30px auto 50px;
   padding: 0;
   border-radius: 25px;
   color: white;
@@ -158,12 +158,12 @@ h1, h2 {
   width: 100%;
   object-fit: cover;
 }
-.restaurant-section .cards-container article div {
+.restaurant-section .cards-container article > div {
   display: flex;
   justify-content: space-between;
   padding: 15px 20px 0 10px;
 }
-.restaurant-section .cards-container article div h3 {
+.restaurant-section .cards-container article > div h3 {
   margin: 0;
 }
 .restaurant-section .cards-container article h4 {
@@ -179,8 +179,31 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.heart:hover svg {
+  fill: url(#hearLinearGradient);
+  stroke: transparent;
+}
+.heart svg {
+  fill: white;
+  stroke: black;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant-section .heart {
+  margin-right: 0;
+}
+
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -189,10 +212,19 @@ h1, h2 {
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  z-index: 1;
 }
 
 .header__logo {
   height: 30px;
+}
+
+main {
+  margin-top: 64px;
+}
+
+img + main {
+  margin-top: 0;
 }
 
 .footer {
@@ -228,6 +260,7 @@ h1, h2 {
   width: 100%;
   z-index: 1;
   object-fit: cover;
+  margin-top: 64px;
 }
 
 .menu {
@@ -240,6 +273,8 @@ h1, h2 {
   border-top-right-radius: 30px;
   padding: 30px 15px 0 15px;
   margin-bottom: -30px;
+  display: flex;
+  flex-direction: column;
 }
 .menu header {
   display: flex;
