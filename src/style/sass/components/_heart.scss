@@ -1,0 +1,26 @@
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      fill: url(#hearLinearGradient);
+      stroke: transparent;
+    }
+  }
+
+  svg {
+    fill: white;
+    stroke: black;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.restaurant-section .heart {
+  margin-right: 0;
+}
