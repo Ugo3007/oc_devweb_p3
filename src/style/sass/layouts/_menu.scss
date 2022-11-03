@@ -130,14 +130,15 @@
       justify-content: center;
       border-radius: 0 20px 20px 0;
       background-color: $tertiary-color;
-      color: black;
+      color: white;
       overflow-x: hidden;
 
 
       > i {
         transform: rotate(360deg);
         display: inline-block;
-        transition: transform 300ms ease-in-out
+        transition: transform 300ms ease-in-out;
+        font-size: 20px;
       }
     }
   }

@@ -413,13 +413,14 @@ img + main {
   justify-content: center;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
-  color: black;
+  color: white;
   overflow-x: hidden;
 }
 .menu__card > div:last-of-type > i {
   transform: rotate(360deg);
   display: inline-block;
   transition: transform 300ms ease-in-out;
+  font-size: 20px;
 }
 
 main {
