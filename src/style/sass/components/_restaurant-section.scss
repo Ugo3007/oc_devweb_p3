@@ -20,7 +20,7 @@
       height: 250px;
       border-radius: 20px;
       overflow: hidden;
-   
+
 
       img {
         height: 175px;
@@ -28,16 +28,14 @@
         object-fit: cover;
       }
 
-      div {
+      > div {
         display: flex;
         justify-content: space-between;
         padding: 15px 20px 0 10px;
 
         h3 {
           margin: 0;
-
         }
-
       }
 
       h4 {
@@ -45,7 +43,6 @@
         padding: 5px 20px 0 10px;
         font-weight: 100;
       }
-
     }
   }
 }
