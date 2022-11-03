@@ -38,9 +38,21 @@
   margin-bottom: 35px;
 
   h3 {
-    margin: 0 0 5px;
+    margin: 0 0 30px;
     font-weight: 100;
     font-size: 16px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      width: 40px;
+      height: 3px;
+      background-color: $tertiary-color;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -50,55 +62,71 @@
   gap: 10px;
 }
 
-
 .menu__card {
-  cursor: pointer;
   box-sizing: border-box;
-  background-color: white;
-  min-width: 100%;
-  min-height: 70px;
-  padding: 15px 30px 15px 11px;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
+  min-width: 100%;
+  min-height: 70px;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0 2px 5px;
   position: relative;
   top: 100px;
 
   @include fade-in;
 
-  h4, p, h6 {
-    margin: 0;
-  }
-
-  p {
-    font-weight: 100;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  p, h6 {
-    font-size: 14px;
-  }
-
-  h6 {
-    padding-left: 5px;
-  }
-
-  .menu__price-line {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-  }
-}
-
-.animation__hidden {
-  background-color: $tertiary-color;
-
   &:hover {
-    @include green_div;
+    > div:last-of-type {
+      width: 60px;
+    }
+  }
+
+  > div {
+    &:first-of-type {
+      width: 100%;
+      padding: 15px 15px 10px 11px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h4, p, h6 {
+        margin: 0;
+      }
+
+      p {
+        font-weight: 100;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      p, h6 {
+        font-size: 14px;
+      }
+
+      h6 {
+        padding-left: 5px;
+      }
+
+      .menu__price-line {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+    }
+
+    &:last-of-type {
+      transition: width 100ms ease-in-out;
+      width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 20px 20px 0;
+      background-color: $tertiary-color;
+      color: black;
+      overflow-x: hidden;
+    }
   }
 }
-
