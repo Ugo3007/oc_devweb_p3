@@ -6,8 +6,9 @@
   height: 24px;
   cursor: pointer;
 
-  &:hover {
-    svg {
+
+  svg {
+    path:hover {
       fill: url(#hearLinearGradient);
       stroke: transparent;
     }

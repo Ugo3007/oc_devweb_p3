@@ -180,7 +180,7 @@ h1, h2 {
   height: 24px;
   cursor: pointer;
 }
-.heart:hover svg {
+.heart svg path:hover {
   fill: url(#hearLinearGradient);
   stroke: transparent;
 }
@@ -406,7 +406,7 @@ img + main {
   flex-wrap: wrap;
 }
 .menu__card > div:last-of-type {
-  transition: width 100ms ease-in-out;
+  transition: width 400ms ease-in-out;
   width: 0;
   display: flex;
   align-items: center;
@@ -419,7 +419,7 @@ img + main {
 .menu__card > div:last-of-type > i {
   transform: rotate(360deg);
   display: inline-block;
-  transition: transform 300ms ease-in-out;
+  transition: transform 500ms ease-in-out;
   font-size: 20px;
 }
 
