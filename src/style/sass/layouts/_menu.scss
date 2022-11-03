@@ -29,7 +29,7 @@
 
     i {
       font-size: 20px;
-      padding: 2.5px 10px 2.5px 0;
+      padding: 2.5px 15px 2.5px 0;
     }
   }
 }
@@ -80,6 +80,10 @@
   &:hover {
     > div:last-of-type {
       width: 60px;
+
+      > i {
+        transform: rotate(0);
+      }
     }
   }
 
@@ -114,6 +118,7 @@
         display: flex;
         text-align: center;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
     }
 
@@ -127,6 +132,13 @@
       background-color: $tertiary-color;
       color: black;
       overflow-x: hidden;
+
+
+      > i {
+        transform: rotate(360deg);
+        display: inline-block;
+        transition: transform 300ms ease-in-out
+      }
     }
   }
 }
