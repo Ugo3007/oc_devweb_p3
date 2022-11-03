@@ -1,0 +1,12 @@
+@mixin green_div {
+  animation: green_div 1s ease-in both;
+
+  @keyframes green_div {
+    from {
+      width: 0;
+    }
+    to {
+      width: 20px;
+    }
+  }
+}
