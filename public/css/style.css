@@ -269,14 +269,6 @@ img + main {
     font-size: 20px;
   }
 }
-.menu__image {
-  height: 270px;
-  width: 100%;
-  z-index: 1;
-  object-fit: cover;
-  margin-top: 64px;
-}
-
 .menu {
   box-sizing: border-box;
   position: relative;
@@ -290,6 +282,13 @@ img + main {
   display: flex;
   flex-direction: column;
 }
+.menu__image {
+  height: 270px;
+  width: 100%;
+  z-index: 1;
+  object-fit: cover;
+  margin-top: 64px;
+}
 .menu header {
   display: flex;
   justify-content: space-between;
@@ -301,17 +300,16 @@ img + main {
   font-size: 20px;
   padding: 2.5px 15px 2.5px 0;
 }
-
-.menu__section {
+.menu > section {
   margin-bottom: 35px;
 }
-.menu__section h3 {
+.menu > section h3 {
   margin: 0 0 30px;
   font-weight: 100;
   font-size: 16px;
   position: relative;
 }
-.menu__section h3:after {
+.menu > section h3:after {
   content: "";
   position: absolute;
   left: 0;
@@ -321,14 +319,13 @@ img + main {
   background-color: #99E2D0;
   margin-bottom: 10px;
 }
-
-.menu__card-container {
+.menu > section > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.menu__card {
+.card {
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
@@ -340,6 +337,7 @@ img + main {
   box-shadow: rgba(0, 0, 0, 0.35) 0 2px 5px;
   position: relative;
   top: 100px;
+  overflow: hidden;
   animation: slide-top 0.5s ease-out both, fadein 2s both;
   opacity: 0;
 }
@@ -351,16 +349,16 @@ img + main {
     opacity: 1;
   }
 }
-.menu__card:nth-child(1) {
+.card:nth-child(1) {
   animation-delay: 0.1s;
 }
-.menu__card:nth-child(2) {
+.card:nth-child(2) {
   animation-delay: 0.3s;
 }
-.menu__card:nth-child(3) {
+.card:nth-child(3) {
   animation-delay: 0.5s;
 }
-.menu__card:nth-child(4) {
+.card:nth-child(4) {
   animation-delay: 0.7s;
 }
 @keyframes slide-top {
@@ -371,41 +369,41 @@ img + main {
     transform: translateY(-100px);
   }
 }
-.menu__card:hover > div:last-of-type {
+.card:hover > div:last-of-type {
   width: 60px;
 }
-.menu__card:hover > div:last-of-type > i {
+.card:hover > div:last-of-type > i {
   transform: rotate(0);
 }
-.menu__card > div:first-of-type {
+.card > div:first-of-type {
   width: 100%;
   padding: 15px 15px 10px 11px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.menu__card > div:first-of-type h4, .menu__card > div:first-of-type p, .menu__card > div:first-of-type h6 {
+.card > div:first-of-type h4, .card > div:first-of-type p:first-of-type, .card > div:first-of-type p:nth-of-type(2) {
   margin: 0;
 }
-.menu__card > div:first-of-type p {
+.card > div:first-of-type p:first-of-type {
   font-weight: 100;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu__card > div:first-of-type p, .menu__card > div:first-of-type h6 {
+.card > div:first-of-type p:first-of-type, .card > div:first-of-type p:nth-of-type(2) {
   font-size: 14px;
 }
-.menu__card > div:first-of-type h6 {
+.card > div:first-of-type p:nth-of-type(2) {
   padding-left: 5px;
 }
-.menu__card > div:first-of-type .menu__price-line {
+.card > div:first-of-type > div {
   display: flex;
   text-align: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.menu__card > div:last-of-type {
+.card > div:last-of-type {
   transition: width 400ms ease-in-out;
   width: 0;
   display: flex;
@@ -416,7 +414,7 @@ img + main {
   color: white;
   overflow-x: hidden;
 }
-.menu__card > div:last-of-type > i {
+.card > div:last-of-type > i {
   transform: rotate(360deg);
   display: inline-block;
   transition: transform 500ms ease-in-out;
