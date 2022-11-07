@@ -5,12 +5,13 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-
+  transition: fill 1s linear;
 
   svg {
     path:hover {
       fill: url(#hearLinearGradient);
       stroke: transparent;
+      animation: fadeInHeart 1s;
     }
   }
 
@@ -24,4 +25,13 @@
 
 .restaurant-section .heart {
   margin-right: 0;
+}
+
+@keyframes fadeInHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
