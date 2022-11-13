@@ -185,7 +185,7 @@ h1, h2 {
 .heart svg path:hover {
   fill: url(#hearLinearGradient);
   stroke: transparent;
-  animation: fadeInHeart 1s;
+  animation: fadeInHeart 2s;
 }
 .heart svg {
   fill: white;
