@@ -476,6 +476,9 @@ img + main {
     align-items: center;
     font-size: 20px;
   }
+  .footer ul li:first-of-type i {
+    padding-right: 17.5px;
+  }
 }
 .menu {
   box-sizing: border-box;
