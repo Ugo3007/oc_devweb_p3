@@ -18,6 +18,12 @@
 
     li {
       padding-bottom: 10px;
+
+      &:first-of-type {
+        i {
+          padding-right: 16px;
+        }
+      }
     }
   }
 
@@ -28,18 +34,6 @@
 
   i {
     padding-right: 10px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .footer {
-    padding-left: 15%;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .footer {
-    padding-left: 20%;
   }
 }
 
